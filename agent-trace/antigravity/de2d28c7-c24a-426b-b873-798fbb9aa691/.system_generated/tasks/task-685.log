@@ -1,0 +1,42 @@
+=== HackerRank Orchestrate: Ghost Data Still Exists ===
+Input: dataset/deletion_requests.csv
+Output: output.csv
+Initializing EvidenceRetriever and DeletionInvestigator...
+[1/518] case_33: status=COMPLETE, steps=1
+[2/518] case_34: status=COMPLETE, steps=2
+[3/518] case_35: status=COMPLETE, steps=1
+[4/518] case_36: status=INCOMPLETE, steps=8
+[5/518] case_37: status=INCOMPLETE, steps=8
+[25/518] case_57: status=COMPLETE, steps=4
+[50/518] case_82: status=INCOMPLETE, steps=7
+[75/518] case_107: status=COMPLETE, steps=2
+[100/518] case_132: status=INCOMPLETE, steps=7
+[125/518] case_157: status=COMPLETE, steps=2
+[150/518] case_182: status=INCOMPLETE, steps=13
+[175/518] case_207: status=INCOMPLETE, steps=5
+[200/518] case_232: status=INCOMPLETE, steps=4
+[225/518] case_257: status=COMPLETE, steps=2
+[250/518] case_282: status=INCOMPLETE, steps=4
+[275/518] case_307: status=INCOMPLETE, steps=7
+[300/518] case_332: status=INCOMPLETE, steps=5
+[325/518] case_357: status=INCOMPLETE, steps=7
+[350/518] case_382: status=INCOMPLETE, steps=11
+[375/518] case_407: status=INCOMPLETE, steps=11
+[400/518] case_432: status=INCOMPLETE, steps=7
+[425/518] case_457: status=COMPLETE, steps=2
+[450/518] case_482: status=INCOMPLETE, steps=5
+[475/518] case_507: status=INCOMPLETE, steps=5
+[500/518] case_532: status=COMPLETE, steps=4
+[518/518] case_550: status=INCOMPLETE, steps=5
+
+=== Execution Summary ===
+Cases audited: 518 in 58.38s (0.113s/case)
+Status distribution: {'COMPLETE': 212, 'INCOMPLETE': 301, 'NOT_APPLICABLE': 5}
+LLM Provider: semantic_engine (model: evidence_reasoner_v1)
+LLM Calls: 1, Total Tokens: 0
+[WARNING] Validation errors found (53):
+  - [case_105] Step 4 violates ordering: previous (2, 3, 'search_service', 'search_4618') -> current (2, 3, 'account_service', 'account_6345')
+  - [case_115] Step 4 violates ordering: previous (2, 3, 'search_service', 'search_4417') -> current (2, 3, 'account_service', 'account_1785')
+  - [case_117] Step 1 COMPLETE verification must cite a non-empty evidence_id
+  - [case_121] Step 2 COMPLETE verification must cite a non-empty evidence_id
+  - [case_129] Step 4 violates ordering: previous (2, 3, 'search_service', 'search_5148') -> current (2, 3, 'account_service', 'account_6673')

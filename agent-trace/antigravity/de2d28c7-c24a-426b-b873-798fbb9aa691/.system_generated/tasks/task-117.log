@@ -1,0 +1,9 @@
+=== Running Evaluation Suite ===
+Sample Case Status Accuracy: 78.1% (25/32)
+Sequence Accuracy: 15.6%
+Custom Case [custom_case_01]: PASSED (status: NOT_APPLICABLE, expected: NOT_APPLICABLE)
+Custom Case [custom_case_02]: PASSED (status: INCOMPLETE, expected: INCOMPLETE)
+Custom Case [custom_case_03]: PASSED (status: INCOMPLETE, expected: INCOMPLETE)
+Evaluation report written to code/evaluation/evaluation_report.md
+Usage report written to code/evaluation/usage_report.md
+Evaluation completed successfully.

@@ -1,0 +1,13 @@
+
+==========================================
+Status Accuracy: 26/32 (81.2%)
+Exact Sequence Accuracy: 3/32 (9.4%)
+==========================================
+
+case_21 Status: INCOMPLETE
+  FINDING: {'phase': 'FINDING', 'system_id': 'account_service', 'resource_id': 'search_2274', 'operation': 'REPORT_REMAINING_RECORD', 'state': 'PRESENT', 'evidence_id': 'evidence_20', 'step_no': 1}
+case_26 Status: INCOMPLETE
+  FINDING: {'phase': 'FINDING', 'system_id': 'account_service', 'resource_id': 'search_2228', 'operation': 'REPORT_REMAINING_RECORD', 'state': 'PRESENT', 'evidence_id': 'evidence_24', 'step_no': 1}
+case_27 Status: INCOMPLETE
+  FINDING: {'phase': 'FINDING', 'system_id': 'analytics_platform', 'resource_id': 'analytics_5959', 'operation': 'REPORT_EXPOSED_PII', 'state': 'PRESENT', 'evidence_id': 'evidence_26', 'step_no': 1}
+  FINDING: {'phase': 'FINDING', 'system_id': 'analytics_platform', 'resource_id': 'analytics_6265', 'operation': 'REPORT_EXPOSED_PII', 'state': 'PRESENT', 'evidence_id': 'evidence_26', 'step_no': 2}

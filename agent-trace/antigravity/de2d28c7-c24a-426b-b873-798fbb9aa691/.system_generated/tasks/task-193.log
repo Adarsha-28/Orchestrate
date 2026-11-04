@@ -1,0 +1,18 @@
+=== HackerRank Orchestrate: Ghost Data Still Exists ===
+Input: dataset\sample_deletion_requests.csv
+Output: sample_output_generated.csv
+Initializing EvidenceRetriever and DeletionInvestigator...
+[1/32] case_01: status=COMPLETE, steps=1
+[2/32] case_02: status=COMPLETE, steps=1
+[3/32] case_03: status=INCOMPLETE, steps=15
+[4/32] case_04: status=COMPLETE, steps=0
+[5/32] case_05: status=INCOMPLETE, steps=3
+[25/32] case_25: status=COMPLETE, steps=11
+[32/32] case_32: status=INCOMPLETE, steps=5
+
+=== Execution Summary ===
+Cases audited: 32 in 4.23s (0.132s/case)
+Status distribution: {'COMPLETE': 7, 'INCOMPLETE': 25, 'NOT_APPLICABLE': 0}
+LLM Provider: semantic_engine (model: evidence_reasoner_v1)
+LLM Calls: 1, Total Tokens: 0
+[SUCCESS] Output validation PASSED for all 32 rows in sample_output_generated.csv

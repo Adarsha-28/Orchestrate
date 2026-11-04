@@ -1,0 +1,37 @@
+import pandas as pd
+import json
+import os
+
+import sys
+sys.path.insert(0, '.')
+from code.retriever import EvidenceRetriever
+
+retriever = EvidenceRetriever()
+df_sample = pd.read_csv('dataset/sample_deletion_requests.csv')
+df_gold = pd.read_csv('dataset/sample_output.csv')
+
+target_cases = ['case_03', 'case_09', 'case_10', 'case_21', 'case_26', 'case_27', 'case_28']
+
+for cid in target_cases:
+    row = df_sample[df_sample['case_id'] == cid].iloc[0].to_dict()
+    gold_row = df_gold[df_gold['case_id'] == cid].iloc[0]
+    ctx = retriever.retrieve_context(row)
+    
+    print("="*70)
+    print(f"CASE: {cid} | Gold Status: {gold_row['deletion_status']}")
+    print(f"Email: {row['email']} | Req at: {row['requested_at']} | Audit at: {row['audit_at']}")
+    print(f"Reported status: {row['reported_status']} at {row['reported_at']}")
+    print(f"Request text: {row['request_text']}")
+    print(f"Resolved identifiers: {ctx.user_profile.all_identifiers if ctx.user_profile else 'None'}")
+    
+    # Gold steps
+    g_steps = json.loads(gold_row['steps_json'])
+    print(f"Gold Steps ({len(g_steps)}):")
+    for s in g_steps:
+        print(f"   {s['phase']} | {s['system_id']} | {s['resource_id']} | {s['operation']} | {s['state']} | {s['evidence_id']}")
+        
+    print(f"Retrieved Evidence Files ({len(ctx.relevant_evidence)}):")
+    for ev in ctx.relevant_evidence:
+        print(f"   file_id: {ev['file_id']}, cap_at: {ev['captured_at']}, origin: {ev['origin']}, matches: {len(ev.get('matched_records', []))}")
+        for r in ev.get('matched_records', [])[:4]:
+            print(f"      rec: {r}")

@@ -1,0 +1,36 @@
+Using CPU. Note: This module is much faster with a GPU.
+C:\Users\ADARSHA\AppData\Roaming\Python\Python310\site-packages\torch\ao\nn\quantized\dynamic\modules\rnn.py:162: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  w_ih = torch.quantize_per_tensor(
+C:\Users\ADARSHA\AppData\Roaming\Python\Python310\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+C:\Users\ADARSHA\AppData\Roaming\Python\Python310\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+C:\Users\ADARSHA\AppData\Roaming\Python\Python310\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+C:\Users\ADARSHA\AppData\Roaming\Python\Python310\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+C:\Users\ADARSHA\AppData\Roaming\Python\Python310\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+C:\Users\ADARSHA\AppData\Roaming\Python\Python310\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+C:\Users\ADARSHA\AppData\Roaming\Python\Python310\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+C:\Users\ADARSHA\AppData\Roaming\Python\Python310\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+C:\Users\ADARSHA\AppData\Roaming\Python\Python310\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+C:\Users\ADARSHA\AppData\Roaming\Python\Python310\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+C:\Users\ADARSHA\AppData\Roaming\Python\Python310\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+=== Running Evaluation Suite ===
+Parsing all 94 evidence files (caching results)...
+Evidence cached to C:\Users\ADARSHA\Desktop\Orchestrate\code\.cache\parsed_evidence.json
+Sample Case Status Accuracy: 90.6% (29/32)
+Sequence Accuracy: 34.4%
+Custom Case [custom_case_01]: PASSED (status: NOT_APPLICABLE, expected: NOT_APPLICABLE)
+Custom Case [custom_case_02]: PASSED (status: INCOMPLETE, expected: INCOMPLETE)
+Custom Case [custom_case_03]: PASSED (status: INCOMPLETE, expected: INCOMPLETE)
+Evaluation report written to code/evaluation/evaluation_report.md
+Usage report written to code/evaluation/usage_report.md
+Evaluation completed successfully.

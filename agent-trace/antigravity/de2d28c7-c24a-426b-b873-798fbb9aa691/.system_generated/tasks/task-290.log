@@ -1,0 +1,10 @@
+Status Accuracy with boundary retriever: 24/32 (75.0%)
+Remaining status mismatches (8):
+  case_09: Pred=COMPLETE vs Gold=INCOMPLETE
+  case_10: Pred=COMPLETE vs Gold=INCOMPLETE
+  case_11: Pred=COMPLETE vs Gold=INCOMPLETE
+  case_12: Pred=COMPLETE vs Gold=INCOMPLETE
+  case_13: Pred=COMPLETE vs Gold=INCOMPLETE
+  case_14: Pred=COMPLETE vs Gold=INCOMPLETE
+  case_15: Pred=COMPLETE vs Gold=INCOMPLETE
+  case_17: Pred=COMPLETE vs Gold=INCOMPLETE

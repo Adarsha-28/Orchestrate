@@ -1,0 +1,12 @@
+
+==========================================
+Status Accuracy: 26/32 (81.2%)
+Exact Sequence Accuracy: 3/32 (9.4%)
+==========================================
+
+case_06 Pred: COMPLETE Gold: INCOMPLETE
+case_08 Pred: COMPLETE Gold: INCOMPLETE
+case_21 Pred: INCOMPLETE Gold: COMPLETE
+case_26 Pred: INCOMPLETE Gold: COMPLETE
+case_27 Pred: INCOMPLETE Gold: COMPLETE
+case_32 Pred: COMPLETE Gold: INCOMPLETE
